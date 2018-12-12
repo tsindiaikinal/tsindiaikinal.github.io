@@ -1,0 +1,15 @@
+@media only screen and (max-width: 1060px) {
+    .about-me__box-content1,
+    .about-me__box-content2,
+    .about-me__box-content3
+    {
+        left: 5.6%;
+    }
+
+    .about-me__box-content4,
+    .about-me__box-content5
+    {
+        left: 52%;
+    }
+
+}
