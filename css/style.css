@@ -1,0 +1,117 @@
+* {
+    /* margin: 0;
+    padding: 0; */
+}
+
+.container {
+    max-width: 1600px;
+}
+
+.main-banner {
+    width: 100%;
+    height: 876px;
+    border: 1px solid grey;
+}
+
+.main-banner-bg {
+    /* width: 100%; */
+    height: 100%;
+    background-image: url(../img/banner-bg.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    color: azure;
+    background-color: rgba(0,0,0,.5);
+}
+
+.menu {
+    /* margin: 0; */
+    width: 700px;
+    height: 38px;
+    margin-left: 43%;
+    margin-top: 5px;
+    /* margin-right: 25%; */
+    /* display: inline-block; */
+    list-style: none;
+}
+
+.menu__item {
+    display: inline-block;
+    
+}
+
+.menu__link {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: white;
+    font-family: "Open Sans";
+    text-decoration: none;
+    font-weight: 600;
+    line-height: 36px;
+    text-align: center;
+    width: 75px;
+    height: 36px;
+    box-sizing: border-box;
+}
+
+.menu__link:hover {
+    border: 1px solid white;
+    color: rgb(197, 153, 102);
+  /* background-image: -moz-linear-gradient( 90deg, rgb(0,0,0) 0%, rgb(255,255,255) 100%); */
+  /* background-image: -webkit-linear-gradient( 90deg, rgb(0,0,0) 0%, rgb(255,255,255) 100%); */
+  /* background-image: -ms-linear-gradient( 90deg, rgb(0,0,0) 0%, rgb(255,255,255) 100%); */
+}
+
+h1 {
+    font-size: 8rem;
+  font-family: 'Bebas Neue';
+  color: rgb(255, 255, 255);
+  line-height: 1;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 225px;
+  margin-bottom: 50px;
+  /* height: 244px; */
+}
+
+.title-line {
+    display: block;
+    background-color: rgb(198, 155, 110);
+    margin: auto auto 30px;
+    width: 170px;
+    height: 4px;
+}
+
+.slogan {
+  font-size: 1rem;
+  font-family: "Open Sans";
+  color: rgb(255, 255, 255);
+  /* line-height: 1.2; */
+  text-align: center;
+}
+
+.scroll-down-icon {
+  border: 1px solid rgb(255, 255, 255);
+  background-color: #2d2c29;
+  /* background-image: -moz-linear-gradient( 90deg, rgb(0,0,0) 0%, rgb(255,255,255) 100%); */
+  /* background-image: -webkit-linear-gradient( 90deg, rgb(0,0,0) 0%, rgb(255,255,255) 100%); */
+  /* background-image: -ms-linear-gradient( 90deg, rgb(0,0,0) 0%, rgb(255,255,255) 100%); */
+  box-shadow: 2.5px 4.33px 5px 0px rgba(0, 0, 0, 0.75),inset 3.536px -3.536px 5px 0px rgba(0, 0, 0, 0.75);
+  transform: translateX(-50%);
+  position: absolute;
+  left: 50%;
+  top: 782px;
+  width: 38px;
+  height: 38px;
+  font-size: 1rem;
+  font-size: 32px;
+  color: rgb(198, 155, 110);
+  line-height: 1.2;
+  text-align: center;
+}
