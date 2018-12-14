@@ -305,7 +305,9 @@ h1 {
     max-width: 400px;
     margin: 5px;
     height: 15px;
-    background-color: maroon;
+    color: rgb(26, 25, 24);
+    background-color: #ffc45f;
+    border-radius: 4px;
     /* color: burlywood; */
 }
 
