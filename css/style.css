@@ -356,6 +356,13 @@ h1 {
     margin-right: 30px;
 }
 
+.item--4,
+.item--5,
+.item--6
+{
+    background-image: url(../img/bulat.png);
+}
+
 .works__item:hover {
     filter: blur(2px);
 }
