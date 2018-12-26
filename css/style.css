@@ -4,6 +4,45 @@
     box-sizing: border-box;
 } */
 
+#warning {
+    /* display: inline-block; */
+    width: 70%;
+    /* height: 300px; */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    border: 4px solid red;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 8rem;
+    text-align: center;
+    color: rgb(204, 25, 25);
+    text-shadow: 1px 1px 2px #fff, 1px 1px 3px #000;
+}
+
+@media only screen and (max-width: 959px  ) {
+    #warning {
+        width: 70%;
+        font-size: 6rem;
+    }
+}
+
+@media only screen and (max-width: 767px  ) {
+    #warning {
+        width: 70%;
+        font-size: 4rem;
+    }
+}
+
+@media only screen and (max-width: 479px  ) {
+    #warning {
+        width: 70%;
+        font-size: 2rem;
+    }
+}
+
 h1, h2, h3 {
     text-transform: uppercase;
 }
