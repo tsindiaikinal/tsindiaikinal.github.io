@@ -175,7 +175,7 @@ h1 {
 }
 
 .about-me__head {
-    margin-top: 95px;
+    /* margin-top: 95px; */
     margin-bottom: -10px;
 }
 
@@ -186,6 +186,38 @@ h1 {
   color: rgb(26, 25, 24);
   text-align: center;
   margin-bottom: 140px;
+}
+
+.my-face {
+    background-image: url(../img/IMG_20161023_171424.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin: 100px auto auto;
+    width: 180px;
+    height: 180px;
+    border: 5px solid #fff;
+    border-radius: 50%;
+    position: relative;
+    top: 90px;
+}
+.my-face::after {
+    display: inline-block;
+    content: '';
+    width: 168px;
+    height: 168px;
+    border-radius: 50%;
+    /* background-color: red; */
+    border: 1px solid #000;
+}
+
+.about-me__face {
+    width: 800px;
+    padding-top: 80px;
+    margin: auto;
+    border: 1px solid grey;
+    margin-bottom: 150px;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.6);
 }
 
 .about-me__boxes-wrapper {
@@ -404,4 +436,59 @@ h1 {
 
 .works__item:hover {
     filter: blur(2px);
+}
+
+.some-cool-facts,
+.find-me {
+    width: 100%;
+    height: 424px;
+    background-color: rgba(27, 26, 24,0.9);
+}
+
+.contact-me {
+    height: 800px;
+    padding: 0 200px 0;
+}
+
+form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.contact-me__data {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 100px auto 50px;
+}
+
+input {
+    width: 30%;
+}
+
+input[type="button"] {
+    
+    width: 200px;
+}
+
+textarea {
+    width: 100%;
+}
+
+.find-me h2,
+.find-me {
+    text-align: center;
+    color: #fff;
+}
+
+.find-me .find-me__head {
+    color: fff;
+}
+
+.copyright {
+    max-width: 400px;
+    margin: auto;
 }
