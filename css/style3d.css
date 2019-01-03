@@ -1,11 +1,11 @@
-.works-bg {
+.view {
 	-webkit-perspective: 800px;
 	-moz-perspective: 800px;
 	-o-perspective: 800px;
 	-ms-perspective: 800px;
 	perspective: 800px;
 }
-.works-bg:hover .s1{
+.view:hover .s1{
 	-webkit-transition-delay: 200ms;
 	-moz-transition-delay: 200ms;
 	-o-transition-delay: 200ms;
@@ -18,7 +18,7 @@
 	-ms-transform: rotate3d(0,1,0,-3deg);
 	transform: rotate3d(0,1,0,-3deg);
 }
-.works-bg:hover .s2{
+.view:hover .s2{
 	-webkit-transition-delay: 150ms;
 	-moz-transition-delay: 150ms;
 	-o-transition-delay: 150ms;
@@ -31,7 +31,7 @@
 	-ms-transform: translate3d(59px,0,0) rotate3d(0,1,0,-10deg);
 	transform: translate3d(66px,0,0) rotate3d(0,1,0,-10deg);
 }
-.works-bg:hover .s3{
+.view:hover .s3{
 	-webkit-transition-delay: 100ms;
 	-moz-transition-delay: 100ms;
 	-o-transition-delay: 100ms;
@@ -44,7 +44,7 @@
 	-ms-transform: translate3d(66px,0,0) rotate3d(0,1,0,-16deg);
 	transform: translate3d(66px,0,0) rotate3d(0,1,0,-16deg);
 }
-.works-bg:hover .s4{
+.view:hover .s4{
 	-webkit-transition-delay: 50ms;
 	-moz-transition-delay: 50ms;
 	-o-transition-delay: 50ms;
@@ -57,7 +57,7 @@
 	-ms-transform: translate3d(59px,0,0) rotate3d(0,1,0,-30deg);
 	transform: translate3d(66px,0,0) rotate3d(0,1,0,-30deg);
 }
-.works-bg:hover .s5{
+.view:hover .s5{
 	-webkit-transform: translate3d(67px,0,0) rotate3d(0,1,0,-50deg);
 	-moz-transform: translate3d(67px,0,0) rotate3d(0,1,0,-50deg);
 	-o-transform: translate3d(67px,0,0) rotate3d(0,1,0,-50deg);
@@ -65,11 +65,12 @@
 	transform: translate3d(67px,0,0) rotate3d(0,1,0,-50deg);
 }
 
-.works-bg:hover {
+/* .view:hover {
 	width: 280px;
-}
+	transition-delay: 500ms;
+} */
 
-.works-bg .s4 > .overlay {
+.view .s4 > .overlay {
 	background: -moz-linear-gradient(right, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0) 100%);
 	background: -webkit-linear-gradient(right, rgba(0,0,0,0.3) 0%,rgba(0,0,0,0) 100%);
 	background: -o-linear-gradient(right, rgba(0,0,0,0.3) 0%,rgba(0,0,0,0) 100%);
@@ -77,7 +78,7 @@
 	background: linear-gradient(right, rgba(0,0,0,0.3) 0%,rgba(0,0,0,0) 100%);
 }
 
-.works-bg .s5 > .overlay {
+.view .s5 > .overlay {
 	background: -moz-linear-gradient(left, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0) 100%);
 	background: -webkit-linear-gradient(left, rgba(0,0,0,0.3) 0%,rgba(0,0,0,0) 100%);
 	background: -o-linear-gradient(left, rgba(0,0,0,0.3) 0%,rgba(0,0,0,0) 100%);
