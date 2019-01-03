@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/font-face.css">
     <link rel="stylesheet" href="css/font-awesome4-7.min.css">
+    <link rel="stylesheet" href="css/style3d.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
     <title>Portfolio</title>
@@ -14,20 +15,20 @@
 <body>
     <div class="container">
             <div id="warning">на ремонте</div>
-        <header class="main-banner">
+        <header id="homepage" class="main-banner">
             <div class="main-banner-bg">
                 <div class="overlay">
                     <!-- <span class="logo">trendy</span> -->
                     <div class="menu-wrapper">
                         <ul class="menu">
                             <li class="menu__item"><a class="menu__link" href="#">home</a></li>
-                            <li class="menu__item"><a class="menu__link" href="#">about</a></li>
-                            <li class="menu__item"><a class="menu__link" href="#">services</a></li>
-                            <li class="menu__item"><a class="menu__link" href="#">works</a></li>
-                            <li class="menu__item"><a class="menu__link" href="#">pricing</a></li>
-                            <li class="menu__item"><a class="menu__link" href="#">clients</a></li>
+                            <li class="menu__item"><a class="menu__link" href="#about">about</a></li>
+                            <li class="menu__item"><a class="menu__link" href="#skills">skills</a></li>
+                            <li class="menu__item"><a class="menu__link" href="#works">works</a></li>
+                            <!-- <li class="menu__item"><a class="menu__link" href="#">pricing</a></li> -->
+                            <!-- <li class="menu__item"><a class="menu__link" href="#">clients</a></li> -->
                             <li class="menu__item"><a class="menu__link" href="#">blog</a></li>
-                            <li class="menu__item"><a class="menu__link" href="#">contact</a></li>
+                            <li class="menu__item"><a class="menu__link" href="#address">address</a></li>
                         </ul>
                     </div>
                     <h1>I am <span class="title-line"><br></span>Front-end developer</h1>
@@ -37,7 +38,7 @@
             </div>
             </header>
             <main>
-                <section class="about-me">
+                <section id="about" class="about-me">
                     <div class="my-face"></div>
                     <div class="about-me__face">
                         <h2 class="about-me__head">about me
@@ -85,48 +86,96 @@
                             <li class="diagram__item timeline"><span>2000</span></li>
                             <li class="diagram__item timeline">2000</li>
                             <li class="diagram__item timeline"><span>2000</span></li>
-                            <li class="diagram__item ">2000</li>
+                            <li class="diagram__item timeline">2000</li>
+                            <!-- <li class="timeline"></li> -->
                         </ul>
                         <button class="load-more-btn">load more</button>
                     </div>
             </section>
-            <section class="skills">
+            <section id="skills" class="skills">
                 <h2 class="my-skills">my skills</h2>
                <div class="progress-container">
-                    <div class="progress" data-procent="85" >HTML</div>
-                    <div class="progress" data-procent="85" >CSS</div>
-                    <div class="progress" data-procent="75" >Javascript</div>
-                    <div class="progress" data-procent="50" >jQuery</div>
-                    <div class="progress" data-procent="50" >Bootstrap</div>
-                    <div class="progress" data-procent="40" >SVG</div>
-                    <div class="progress" data-procent="70" >Git</div>
-                    <div class="progress" data-procent="80" >Emmet</div>
-                    <div class="progress" data-procent="80">BEM-methodology</div>
-                    <div class="progress" data-procent="10" >PHP (Lerning)</div>
-                    <div class="progress" data-procent="10" >Vue.js (Lerning)</div>
+                    <div>
+                        <div class="progress" data-procent="85" ><span class="progress-html">HTML</span></div>
+                        <div class="progress" data-procent="85" ><span class="progress-css">CSS</span></div>
+                        <div class="progress" data-procent="75" ><span class="progress-js">Javascript</span></div>
+                        <div class="progress" data-procent="50" ><span class="progress-jquery">jQuery</span></div>
+                        <div class="progress" data-procent="50" ><span class="progress-bootstrap">Bootstrap</span></div>
+                        <div class="progress" data-procent="40" ><span class="progress-svg">SVG</span></div>
+                    </div>
+                    <div>
+                        <div class="progress" data-procent="70" ><span class="progress-git">Git</span></div>
+                        <div class="progress" data-procent="80" ><span class="progress-emmet">Emmet</span></div>
+                        <div class="progress" data-procent="80"><span class="progress-bem">BEM-methodology</span></div>
+                        <div class="progress" data-procent="10" ><span class="progress-php">PHP (Lerning)</span></div>
+                        <div class="progress" data-procent="10" ><span class="progress-vue">Vue.js (Lerning)</span></div>
+                        <div class="progress" data-procent="10"><span class="progress-vue">Photoshop</span></div>
+                    </div>
                </div>
             </section>
-            <section class="works">
+            <section id="works" class="works">
                 <h2 class="works__head">works</h2>
                 <p class="works__slogan">Duis vitae velit mollis, congue nisi dignissim, pellentesque lorem</p>
-                <div class="works-wrapper">
-                    <div class="works__item-border">
-                        <div class="works__item"></div>
+                <div id="grid" class="works-wrapper">
+                    <div class="view">
+                        <div class="view-back">
+                            <span data-icon="A">566</span>
+                            <span data-icon="B">124</span>
+                            <a href="#">&rarr;</a>
+                        </div>
+                        <div class="works-bg">
+                            <img src="img/Home_960px.png">
+                        </div>
                     </div>
-                    <div class="works__item-border">
-                        <div class="works__item"></div>
+                    <div class="view">
+                        <div class="view-back">
+                            <span data-icon="A">210</span>
+                            <span data-icon="B">102</span>
+                            <a href="#">&rarr;</a>
+                        </div>
+                        <div class="works-bg">
+                            <img src="img/Home_960px.png">
+                        </div>
                     </div>
-                    <div class="works__item-border">
-                        <div class="works__item"></div>
+                    <div class="view">
+                        <div class="view-back">
+                            <span data-icon="A">210</span>
+                            <span data-icon="B">102</span>
+                            <a href="#">&rarr;</a>
+                        </div>
+                        <div class="works-bg">
+                            <img src="img/Home_960px.png">
+                        </div>
                     </div>
-                    <div class="works__item-border">
-                        <div class="works__item item--4"></div>
+                    <div class="view">
+                        <div class="view-back">
+                            <span data-icon="A">210</span>
+                            <span data-icon="B">102</span>
+                            <a href="#">&rarr;</a>
+                        </div>
+                        <div class="works-bg">
+                            <img src="img/bulat.png">
+                        </div>
                     </div>
-                    <div class="works__item-border">
-                        <div class="works__item item--5"></div>
+                    <div class="view">
+                        <div class="view-back">
+                            <span data-icon="A">690</span>
+                            <span data-icon="B">361</span>
+                            <a href="#">&rarr;</a>
+                        </div>
+                        <div class="works-bg">
+                            <img src="img/bulat.png">
+                        </div>
                     </div>
-                    <div class="works__item-border">
-                        <div class="works__item item--6"></div>
+                    <div class="view">
+                        <div class="view-back">
+                            <span data-icon="A">987</span>
+                            <span data-icon="B">130</span>
+                            <a href="#">&rarr;</a>
+                        </div>
+                        <div class="works-bg">
+                            <img src="img/bulat.png">
+                        </div>
                     </div>
                 </div>
             </section>
@@ -143,7 +192,7 @@
             </section>
             <section class="contact-me">
                 <h2>contact me</h2>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, asperiores. </p>
+                <p class="contact-me__clogan"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, asperiores. </p>
                 <form action="" method="post">
                    <div class="contact-me__data">
                         <input placeholder="your name" type="text" name="" id="">
@@ -154,31 +203,36 @@
                     <input placeholder="your massege" type="button" value="send the message">
                 </form>
             </section>
-        </main>
+            </main>
                 <footer>
-                    <section class="find-me">
+                    <section id="address" class="find-me">
                         <h2 class="find-me_head">find me</h2>
                         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, asperiores. </p>
-                        <contact class="div">
-                            <h5>Phones</h5>
-                            <p></p>
-                        </contact>
-                        <contact class="div">
-                            <h5>Office adress</h5>
-                            <p></p>
-                        </contact>
-                        <contact class="div">
-                            <h5>emails</h5>
-                            <p></p>
-                        </contact>
+                            <address>
+                                <div class="address-block">
+                                    <h5 class="phones">Phones</h5>
+                                    <p>+38(093) 355-27-70</p>
+                                </div>
+                                <div class="address-block">
+                                    <h5 class="office-address">Office address</h5>
+                                    <p>Zaporizhzhia</p>
+                                </div>
+                                <div class="address-block">
+                                <h5 class="emails">emails</h5>
+                                    <p>tsindalex@yahoo.com</p>
+                                </div>
+                            </address>
                     </section>
                     <div class="copyright">
-                        <p>Copiright &copy; 2018 Alekseii Tsindiaikin</p>
+                        <p>Copyright &copy; 2018 Alekseii Tsindiaikin</p>
                     </div>
                     <div class="social-icons">
     
                     </div>
                 </footer>
+                <div id="home"><a class="to-top" href="#homepage"></a></div>
     </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.hoverfold.js"></script>
 </body>
 </html>
