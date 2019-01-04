@@ -11,6 +11,22 @@
 // English fonts *** Start
 
 @font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-LightItalic.woff2') format('woff2'),
+        url('../fonts/Raleway-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-Regular.woff2') format('woff2'),
+        url('../fonts/Raleway-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'Open Sans';
     src: url('../fonts/OpenSans-ExtraBold.eot');
     src: url('../fonts/OpenSans-ExtraBold.eot?#iefix') format('embedded-opentype'),
@@ -63,6 +79,28 @@
 // English fonts *** End
 
 /* Russian fonts */
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/ru/Raleway-LightItalic.eot');
+    src: url('../fonts/ru/Raleway-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ru/Raleway-LightItalic.woff2') format('woff2'),
+        url('../fonts/ru/Raleway-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/ru/Raleway-Regular.eot');
+    src: url('../fonts/ru/Raleway-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ru/Raleway-Regular.woff2') format('woff2'),
+        url('../fonts/ru/Raleway-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 @font-face {
     font-family: 'Bebas Neue';
     src: url('../fonts/ru/BebasNeueRegular.eot');

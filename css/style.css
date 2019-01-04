@@ -3,6 +3,36 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 } */
+body {
+    font-family: sans-serif, "open sans";
+}
+
+/* common properties >>>start*/
+input[type="button"], 
+.load-more-btn {
+    font-size: 0.875rem;
+    color: #e3d6c8;
+    text-transform: uppercase;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+    border:1px solid #e3d6c8;
+    border-radius: 2px;
+    background-color: rgb(197, 154, 109);
+    margin: auto;
+    box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.5);
+    transition: color 0.5s;
+}
+
+.load-more-btn:hover,
+input[type="button"]:hover
+ {
+    color:#fff;
+}
+
+.load-more-btn:active,
+input[type="button"]:active {
+    box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.5) inset;
+}
+/* common properties <<<end */
 
 #warning {
     /* display: inline-block; */
@@ -65,6 +95,8 @@ main, section {
     width: 100%;
     height: 876px;
     border: 1px solid grey;
+    border-bottom: 1px solid #76420c;
+    box-shadow: 0 0 1px 2px rgba(0, 0, 0, 0.9);
 }
 
 .main-banner-bg {
@@ -134,12 +166,13 @@ main, section {
 
 h1 {
     font-size: 8rem;
-  font-family: 'Bebas Neue';
-  color: rgb(255, 255, 255);
-  text-align: center;
-  margin-top: 225px;
-  margin-bottom: -15px;
-  text-shadow: 2px 2px #000, 1px 1px 3px #fff;
+    font-family: 'Bebas Neue';
+    font-weight: normal;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: 225px;
+    margin-bottom: -15px;
+    text-shadow: 2px 2px #000, 1px 1px 3px #fff;
 }
 
 .title-line {
@@ -191,8 +224,9 @@ h1 {
 
 .about-me__slogan {
   font-size: 1rem;
-  font-family: "Open Sans";
-  font-weight: 600;
+  font-family: Raleway;
+  font-weight: lighter;
+  font-style: italic;
   color: rgb(26, 25, 24);
   text-align: center;
   margin-bottom: 140px;
@@ -217,7 +251,6 @@ h1 {
     width: 168px;
     height: 168px;
     border-radius: 50%;
-    /* background-color: red; */
     border: 1px solid #000;
 }
 
@@ -237,11 +270,12 @@ h1 {
 .about-me__box-content {
     display:flex;
     justify-content: space-between;
-    border: 1px solid rgb(204, 204, 204);
+    border: 1px solid ;
     width: 434px;
     height: 160px;
     padding: 30px;
     position: absolute;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .about-me__box-content1 {
@@ -276,8 +310,9 @@ h1 {
     /* width: 50%; */
     font-size: 1.125rem;
     font-family: "Open Sans";
-    color: rgb(197, 154, 109);
-    font-weight: bold;
+    /* color: rgb(197, 154, 109); */
+    color: #76420c;
+    font-weight: 600;
     /* line-height: 1.2; */
     text-align: left;
     margin: 0;
@@ -293,7 +328,7 @@ h1 {
 }
 
 .about-me__icons {
-    border: 1px solid rgb(204, 204, 204);
+    border: 1px solid #c4915e;
     width: 74px;
     height: 74px;
     box-sizing: border-box;
@@ -305,7 +340,8 @@ h1 {
 .fa-graduation-cap,
 .fa-briefcase {
   font-size: 2rem;
-  color: rgb(197, 154, 109);
+  /* color: rgb(197, 154, 109); */
+  color: #76420c;
   line-height: 74px;
   text-align: center;
 }
@@ -320,8 +356,9 @@ h1 {
     margin-bottom: 195px;
     font-size: 1.125rem;
     font-family: "Open Sans";
-    color: rgb(197, 154, 109);
-    font-weight: bold;
+    color: #e3d6c8;
+    text-shadow: 1px 1px 1px #76420c;
+    font-weight: 600;
     text-align: left;
     width: 110px;
     height: 18px;
@@ -334,18 +371,24 @@ h1 {
     -moz-transform: translateX(-82px);
     -ms-transform: translateX(-82px);
     -o-transform: translateX(-82px);
-    transform: translateX(-82px);
+    transform: translateX(-92px);
 }
 
 .diagram__item::before {
     content: '';
     display: inline-block;
-    border: 2px solid white;
+    /* border-bottom: 1px solid #000;  */
+    border: 2px solid #fff;
     width: 10px;
     height: 10px;
-    margin-right: 15px;
-    transform: translateY(1px);
-    background-color: rgb(197, 154, 109);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    margin-right: 26px;
+    transform: translate(8px, 1px);
+    background: #c4915e;
+    background: -moz-linear-gradient(top,  #c4915e 0%, #76420c 91%);
+    background: -webkit-linear-gradient(top,  #c4915e 0%,#76420c 91%);
+    background: linear-gradient(to bottom,  #c4915e 0%,#76420c 91%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c4915e' endColorstr='#76420c',GradientType=0 );
 }
 
 .timeline::after {
@@ -353,24 +396,26 @@ h1 {
     content: '';
     width: 2px;
     height: 200px;
-    background-color: rgb(204, 204, 204);
-    margin-left: 6px;
+    background-color: #e3d6c8;
+    margin-left: 15px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.75);
 }
 
 .load-more-btn {
     display: block;
-    color:white;
-    text-transform: uppercase;
-    border:none;
-    background-color: rgb(197, 154, 109);
     width: 170px;
     height: 32px;
-    margin: auto;
+}
+
+/* SECTION -SKILLS- >>>start */
+.skills {
+    margin-bottom: 100px;
 }
 
 .progress-container {
     margin: auto;
     max-width: 960px;
+    padding: 60px 30px 0;
     /* position: relative; */
     display: flex;
     -webkit-justify-content: space-between;
@@ -388,8 +433,7 @@ h1 {
     margin: 5px;
     height: 15px;
     margin-bottom: 40px;
-    color: rgb(26, 25, 24);
-    background-color: #ffc45f;
+    background-color: #e3d6c8;
     border: 1px solid #2d2c29;
     border-radius: 2px;
     /* color: burlywood; */
@@ -397,41 +441,47 @@ h1 {
 
 .progress span {
     display: block;
-    /* width: 60px;   */
-    padding: 10px;
+    padding: 6px;
+    margin-top: -38px;
     position: absolute;
-    /* left: 100px; */
-    /* bottom: ; */
+    color: #76420c;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
     border: 1px solid lightgrey;
 }
 
-.progress span:nth-child(1) {
-    margin-top: -50px;
+.progress:nth-child(1) span {
+    margin-top: -45px;
 }
 
-.progress span:nth-child(2) {
-    margin-top: -90px;
+.progress:nth-child(2) span {
+    margin-top: -38px;
 }
 
-.progress span:nth-child(3) {
-    margin-top: -160px;
+.progress:nth-child(3) span {
+    margin-top: -38px;
 }
-
+/* SECTION -WORKS- >>>start */
 .works {
+    margin-bottom: 100px;
     padding-top: 50px;
     background: #1b1a18;
+    border-top: 2px solid #76420c;
+    border-bottom: 1px solid #76420c;
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.9);
 }
 
 .works__head {
     margin-bottom: 0;
     color: #fff;
+    /* text-shadow: 1px 1px 1px #e3d6c8; */
 }
 
 .works__slogan {
     margin: 5px 0 70px;
     text-align: center;
-    font-family: "Open Sans";
-    font-weight: 600;
+    font-family: "Raleway";
+    font-weight: 300;
+    font-style: italic;
     color:white;
 }
 
@@ -452,7 +502,7 @@ h1 {
 	position: relative;
 	width: 370px;
     height: 278px;
-    border: 1px solid rgb(85, 85, 85);
+    border: 1px solid #c4915e;
 	margin: 10px; 
 	box-shadow: 1px 1px 2px rgba(255,255,255,0.7);
 	/* background: #fff; */
@@ -542,14 +592,20 @@ h1 {
 
 .view-back a:hover {
 	color: #fff;
-	border-color: rgb(197, 153, 108);
+    border-color: rgb(197, 153, 108);
+    height: 120px;
+    /* transform: translateX(120px); */
+    border-radius: 25px;
+    position: none;
+    /* right: 135px; */
+    transition: all 1s;
 }
 
 .view-back span[data-icon]::before {
     content: attr(data-icon);
     font-family: 'icons';
     /* color: #ffc45f; */
-		color: rgb(197, 153, 108);
+		color: #c4915e;
 		text-shadow: 0 0 1px rgba(255,255,255,0.2);
 		padding-right: 5px;
 }
@@ -590,6 +646,8 @@ h1 {
 	-ms-transition: left 0.3s ease-in-out;
 	transition: left 0.3s ease-in-out;
 }
+/* SECTION -WORKS- <<<end */
+
 
 .some-cool-facts {
     height: 424px;
@@ -603,10 +661,11 @@ h1 {
 
 .contact-me {
     height: 760px;
-    padding: 0 200px 0;
 }
 
 form {
+    width: 73.125%;
+    margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -626,19 +685,40 @@ form {
     margin: 100px auto 50px;
 }
 
-input {
-    width: 30%;
+input[type='text'],
+input[type='email'],
+input[type='tel'] {
+    text-transform: uppercase;
+    width: 31.965811966%;
+    padding-left: 15px;
+    line-height: 52px;
+    height: 52px;
+    font-size: 14px;
+    border:none;
+    border: 1px solid rgb(204,204,204);
+    color: rgb(119, 119, 119);
+    line-height: 1.4;
+    text-align: left;
+}
+
+
+textarea {
+    text-transform: uppercase;
+    width: 100%;
+    padding-left: 15px;
+    padding-top: 19px;
+    font-size: 14px;
+    color: rgb(119, 119, 119);
+    line-height: 1.4;
+    text-align: left;
+    resize: none;
 }
 
 input[type="button"] {
-    
-    width: 200px;
+    width: 220px;
+    height: 48px;
+    margin-top: 75px;
 }
-
-textarea {
-    width: 100%;
-}
-
 .find-me h2,
 .find-me {
     text-align: center;
