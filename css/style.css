@@ -263,6 +263,71 @@ h1 {
     box-shadow: 0 3px 5px rgba(0,0,0,0.6);
 }
 
+.net-social {
+    width: 150px;
+    height: 50px;
+    margin: auto;
+    position: relative;
+    bottom: 15px;
+    /* perspective: 500; */
+}
+
+.net-social div {
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    display: inline-block;
+    filter: blur(1px);
+    border-radius: 50%;
+    position: absolute;
+    /* z-index: 1; */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.75);
+}
+
+.fa-github-alt:hover,
+.fa-linkedin:hover {
+    transform: scale(1.5);
+    color: #fff;
+    transition: transform ease-out 0.5s;
+    background-color:rgb(26, 25, 24);
+}
+
+.fa-linkedin:hover {
+    background-color: #0077b5;
+}
+
+.net-social div:nth-child(1) {
+    left: 15%;
+}
+
+.net-social div:nth-child(2) {
+    right: 15%;
+}
+
+.fa-github-alt,
+.fa-linkedin {
+    box-sizing: border-box;
+    font-size: 1.5rem;
+    position: absolute; 
+    text-decoration: none;
+    color: #241f1f;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #e3d6c8;
+    padding: 7px;
+    border-radius: 50%;
+}
+
+.fa-github-alt {
+    left: 15%;
+}
+
+.fa-linkedin {
+    right:15%;
+    text-align: center;
+    line-height: 20px;
+}
+
 .about-me__boxes-wrapper {
     width: 100%;
 }
