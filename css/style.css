@@ -1,8 +1,8 @@
-/* * {
+* {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-} */
+}
 body {
     font-family: sans-serif, "open sans";
 }
@@ -93,8 +93,7 @@ main, section {
 
 .main-banner {
     width: 100%;
-    height: 876px;
-    border: 1px solid grey;
+    height: 100vh;
     border-bottom: 1px solid #76420c;
     box-shadow: 0 0 1px 2px rgba(0, 0, 0, 0.9);
 }
@@ -170,7 +169,7 @@ h1 {
     font-weight: normal;
     color: rgb(255, 255, 255);
     text-align: center;
-    margin-top: 225px;
+    margin-top: 200px;
     margin-bottom: -15px;
     text-shadow: 2px 2px #000, 1px 1px 3px #fff;
 }
@@ -207,19 +206,16 @@ h1 {
   text-align: center;
 }
 
-.about-me::after {
-    content: '';
-    display: block;
-    width: 170px;
-    height: 1px;
-    margin: 100px auto 95px;
-    /* margin-top: 100px; */
-    background: rgb(204,204,204);
+.about-me {
+    width: 100%;
+    height: 100vh;
+    background: #000;
 }
 
 .about-me__head {
     /* margin-top: 95px; */
     margin-bottom: -10px;
+    color: #76420c;
 }
 
 .about-me__slogan {
@@ -227,22 +223,22 @@ h1 {
   font-family: Raleway;
   font-weight: lighter;
   font-style: italic;
-  color: rgb(26, 25, 24);
+  /* color: rgb(26, 25, 24); */
+  color: #fff;
   text-align: center;
   margin-bottom: 140px;
 }
 
 .my-face {
-    background-image: url(../img/IMG_20161023_171424.jpg);
-    background-repeat: no-repeat;
+    background: url(../img/i-am.jpg) no-repeat center;
     background-size: cover;
-    background-position: center center;
     margin: 0 auto auto;
     width: 180px;
     height: 180px;
     border: 5px solid #fff;
     border-radius: 50%;
     position: relative;
+    z-index: 1;
     top: 90px;
 }
 .my-face::after {
@@ -254,34 +250,38 @@ h1 {
     border: 1px solid #000;
 }
 
-.about-me__face {
+.about-me__face-body {
     max-width: 800px;
+    height: 60vh;
     padding-top: 80px;
     margin: auto;
     border: 1px solid grey;
-    margin-bottom: 150px;
-    box-shadow: 0 3px 5px rgba(0,0,0,0.6);
+    box-shadow: 0 1px 5px rgba(255,255,255,0.6);
+    position: relative;
 }
 
 .net-social {
     width: 150px;
     height: 50px;
     margin: auto;
-    position: relative;
+    position: absolute;
     bottom: 15px;
+    left: 25%;
+    right: 25%;
+    /* border: 1px solid #fff; */
     /* perspective: 500; */
 }
 
 .net-social div {
     width: 40px;
     height: 40px;
-    border: 1px solid black;
+    border: 1px solid #fff;
     display: inline-block;
     filter: blur(1px);
     border-radius: 50%;
     position: absolute;
     /* z-index: 1; */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.75);
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.75);
 }
 
 .fa-github-alt:hover,
@@ -310,7 +310,8 @@ h1 {
     font-size: 1.5rem;
     position: absolute; 
     text-decoration: none;
-    color: #241f1f;
+    /* color: #241f1f; */
+    color: #e3d6c8;
     width: 40px;
     height: 40px;
     border: 1px solid #e3d6c8;
@@ -328,11 +329,26 @@ h1 {
     line-height: 20px;
 }
 
-.about-me__boxes-wrapper {
+.about-me__education {
     width: 100%;
+    height: 100vh;
+    margin-bottom: 500px;
 }
 
-.about-me__box-content {
+.about-me__education::after {
+    content: '';
+    display: block;
+    width: 170px;
+    height: 1px;
+    margin: 100px auto 95px;
+    background: rgb(204,204,204);
+}
+
+.about-me__education h2 {
+    margin-bottom: 100px;
+}
+
+.about-me__education-content {
     display:flex;
     justify-content: space-between;
     border: 1px solid ;
@@ -343,42 +359,39 @@ h1 {
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
-.about-me__box-content1 {
+.about-me__edu-content1 {
     left:11.2%;
     margin-top: -75px;
 }
 
-.about-me__box-content2 {
+.about-me__edu-content2 {
     margin-top: 355px;
     left:11.2%;
     /* transform: translateX(34.813%); */
 }
 
-.about-me__box-content3 {
+.about-me__edu-content3 {
     margin-top: 785px;
     left:11.2%;
     /* transform: translateX(34.813%); */
 }
 
-.about-me__box-content4 {
+.about-me__edu-content4 {
     left: 55.7%;
     margin-top: 141px;
 }
 
-.about-me__box-content5 {
+.about-me__edu-content5 {
     left: 55.7%;
     margin-top: 568px;
 }
 
 .about-me__header {
-    /* display: block; */
-    /* width: 50%; */
     font-size: 1.125rem;
     font-family: "Open Sans";
     /* color: rgb(197, 154, 109); */
     color: #76420c;
     font-weight: 600;
-    /* line-height: 1.2; */
     text-align: left;
     margin: 0;
 }
@@ -474,7 +487,10 @@ h1 {
 
 /* SECTION -SKILLS- >>>start */
 .skills {
-    margin-bottom: 100px;
+    width: 100%;
+    padding-top: 50px;
+    height: 100vh;
+    /* box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.9); */
 }
 
 .progress-container {
@@ -501,7 +517,6 @@ h1 {
     background-color: #e3d6c8;
     border: 1px solid #2d2c29;
     border-radius: 2px;
-    /* color: burlywood; */
 }
 
 .progress span {
@@ -527,17 +542,18 @@ h1 {
 }
 /* SECTION -WORKS- >>>start */
 .works {
-    margin-bottom: 100px;
+    height: 100vh;
+    /* margin-bottom: 100px; */
     padding-top: 50px;
-    background: #1b1a18;
-    border-top: 2px solid #76420c;
+    background: #000;
+    /* border-top: 1px solid #76420c; */
     border-bottom: 1px solid #76420c;
     box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.9);
 }
 
 .works__head {
     margin-bottom: 0;
-    color: #fff;
+    color: #76420c;
     /* text-shadow: 1px 1px 1px #e3d6c8; */
 }
 
@@ -718,14 +734,14 @@ h1 {
     height: 424px;
 }
 
-.some-cool-facts,
-.find-me {
+.some-cool-facts {
     width: 100%;
     background-color: rgba(27, 26, 24,0.9);
 }
 
 .contact-me {
-    height: 760px;
+    padding-top: 50px;
+    height: 100vh;
 }
 
 form {
@@ -784,15 +800,17 @@ input[type="button"] {
     height: 48px;
     margin-top: 75px;
 }
-.find-me h2,
-.find-me {
+.find-me h2 {
     text-align: center;
-    color: #fff;
+    color: #76420c;
 }
 
 .find-me {
+    text-align: center;
+    color: #fff;
     height: 468px;
     padding-top: 20px;
+    background: #000;
 }
 
 address {
@@ -881,11 +899,4 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ccf3e2c7', e
     font-family: "FontAwesome";
     color: #fff;
     font-size: 1.5rem;
-}
-
-.to-top:hover > ::before {
-    margin-top: -10px;
-    /* color: rgba(197,153,108,0.7); */
-    color: red;
-    /* margin-top: 0; */
 }
