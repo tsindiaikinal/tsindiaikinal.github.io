@@ -605,8 +605,7 @@ h1 {
 .works-bg .slice{
 	width: 68px;
 	height: 100%;
-	z-index: 100;
-	
+    z-index: 100;
 	-webkit-transform-style: preserve-3d;
 	-moz-transform-style: preserve-3d;
 	-o-transform-style: preserve-3d;
@@ -666,7 +665,7 @@ h1 {
 	border-radius: 50%;
 	width: 30px;
 	height: 30px;
-	line-height: 22px;
+	line-height: 25px;
 	text-align: center;
 	font-weight: 700;
 }
@@ -678,7 +677,6 @@ h1 {
     /* transform: translateX(120px); */
     border-radius: 25px;
     position: none;
-    /* right: 135px; */
     transition: all 1s;
 }
 
@@ -727,6 +725,7 @@ h1 {
 	-ms-transition: left 0.3s ease-in-out;
 	transition: left 0.3s ease-in-out;
 }
+
 /* SECTION -WORKS- <<<end */
 
 
