@@ -490,7 +490,6 @@ h1 {
     width: 100%;
     padding-top: 50px;
     height: 100vh;
-    /* box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.9); */
 }
 
 .progress-container {
@@ -543,12 +542,12 @@ h1 {
 /* SECTION -WORKS- >>>start */
 .works {
     height: 100vh;
-    /* margin-bottom: 100px; */
+    margin-top: 2px;
     padding-top: 50px;
     background: #000;
-    /* border-top: 1px solid #76420c; */
+    border-top: 1px solid #76420c;
     border-bottom: 1px solid #76420c;
-    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.9);
+    box-shadow: 0 0 1px 2px rgba(0, 0, 0, 0.9);
 }
 
 .works__head {
@@ -725,17 +724,19 @@ h1 {
 	-ms-transition: left 0.3s ease-in-out;
 	transition: left 0.3s ease-in-out;
 }
-
 /* SECTION -WORKS- <<<end */
 
 
 .some-cool-facts {
-    height: 424px;
-}
-
-.some-cool-facts {
+    height: 450px;
     width: 100%;
-    background-color: rgba(27, 26, 24,0.9);
+    margin-top: 2px;
+    background-image: url(../img/drop.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 0 -80px;
+    /* border-bottom: 1px solid #76420c;
+    box-shadow: 0 0 1px 2px rgba(0, 0, 0, 0.9);     */
 }
 
 .contact-me {
