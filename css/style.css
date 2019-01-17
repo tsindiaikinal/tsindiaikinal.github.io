@@ -84,6 +84,16 @@ h2 {
     text-align: center;
 }
 
+.sign {
+    display: inline-block;
+    width: 250px;
+    transform: translate(550px, 120px) rotate(-30deg);
+    font-family: 'Papyrus';
+    color: #fff;
+    font-size: 32px;
+    text-align: right;
+}
+
 .container {
     max-width: 1600px;
 }
@@ -209,7 +219,10 @@ h1 {
 .about-me {
     width: 100%;
     height: 100vh;
+    margin-top: 2px;
     background: #000;
+    border-bottom: 1px solid #76420c;
+    box-shadow: 0 0 1px 2px rgba(0, 0, 0, 0.9);
 }
 
 .about-me__head {
@@ -255,8 +268,8 @@ h1 {
     height: 60vh;
     padding-top: 80px;
     margin: auto;
-    border: 1px solid grey;
-    box-shadow: 0 1px 5px rgba(255,255,255,0.6);
+    /* border: 1px solid grey;
+    box-shadow: 0 1px 5px rgba(255,255,255,0.6); */
     position: relative;
 }
 
@@ -868,6 +881,10 @@ address {
     margin: auto;
 }
 
+.copyright span {
+    font-family: 'Papyrus', Arial, Helvetica, sans-serif;
+}
+
 #home {
     position: fixed;
     bottom: 100px;
@@ -900,3 +917,5 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ccf3e2c7', e
     color: #fff;
     font-size: 1.5rem;
 }
+
+
